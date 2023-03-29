@@ -3,20 +3,18 @@
 #include "data.h"
 #include "treenode.h"
 #include <vector>
-
+#include <math.h>
+#include <queue>
+#include <stack>
 
 class itree
 {
     public:
-        itree(const data &);
-        itree(const data &,int, int, int);
-        void constructiTree();
-        void insertAllPoints();
+        
 		treenode * rootNode;
 		vector<int> _pointToNode;   //stores leaf node associated with each point in the dataset.
 		vector<treenode*> treeNodes;
-		virtual ~itree();
-        
+
         
     //protected:
 
@@ -25,18 +23,16 @@ class itree
 	int _maxTreeHeight;
     int _maxNumOfNodes;
 	const data & _dataObject;
-		
-};
 
-itree::itree(const data & dataObject): _dataObject(dataObject){}
+itree(const data & dataObject): _dataObject(dataObject){}
 
-itree::itree(const data & dataObject, int sampleSize, int maxTreeHeight, int maxNumOfNodes): _dataObject(dataObject), _sampleSize(sampleSize), _maxTreeHeight(maxTreeHeight), _maxNumOfNodes(maxNumOfNodes){}
+itree(const data & dataObject, int sampleSize, int maxTreeHeight, int maxNumOfNodes): _dataObject(dataObject), _sampleSize(sampleSize), _maxTreeHeight(maxTreeHeight), _maxNumOfNodes(maxNumOfNodes){}
 
-itree::~itree(){}
+virtual ~itree(){}
 
 
 
-void itree::constructiTree(){
+void constructiTree(){
 	treeNodes.resize(_maxNumOfNodes,nullptr);
     rootNode = new treenode(0);
 	treeNodes[0] = rootNode;
@@ -82,17 +78,17 @@ void itree::constructiTree(){
 
 
 
-void itree::insertAllPoints(){
+void insertAllPoints(){
 	int numOfPointsPresent = _dataObject.getnumInstances();
 	_pointToNode.resize(numOfPointsPresent,-1);
-	_nodeMass.resize(_maxNumOfNodes, -1);
+	//_nodeMass.resize(_maxNumOfNodes, -1);
 	rootNode->dataPointIndices.resize(0);
-	smallest_leaf = numOfPointsPresent;
-	largest_leaf = 0;
+	//smallest_leaf = numOfPointsPresent;
+	//largest_leaf = 0;
 	for(int i = 0; i < numOfPointsPresent; i++){
 			rootNode->dataPointIndices.push_back(i);
 	}
-	rootNode->nodeMass = numOfPointsPresent;
+	//rootNode->nodeMass = numOfPointsPresent;
     queue<treenode*> BFTforNodes;
     BFTforNodes.push(rootNode);
     while(!BFTforNodes.empty()){
@@ -103,10 +99,10 @@ void itree::insertAllPoints(){
 			//cout<<"nodeId="<<currNode->nodeId<<" is marked node with mass="<<currNode->nodeMass<<endl;
 			//cout<<"nodeId="<<currNode->nodeId<<" is marked node with mass="<<currNode->dataPointIndices.size()<<endl;
 			
-		_nodeMass[currNode->nodeId]=currNode->nodeMass;
+		//_nodeMass[currNode->nodeId]=currNode->nodeMass;
 		if(currNode->isLeaf){
 			//cout<<currNode->nodeId<<"->dataPointIndices.size();"<<currNode->dataPointIndices.size()<<endl;
-			if(smallest_leaf>currNode->dataPointIndices.size()){
+			/*if(smallest_leaf>currNode->dataPointIndices.size()){
 				//cout<<"smallestleaf="<<smallest_leaf<<endl;
 				smallest_leaf = currNode->dataPointIndices.size();
 				//cout<<"smallestleaf="<<smallest_leaf<<endl;
@@ -116,7 +112,7 @@ void itree::insertAllPoints(){
 				largest_leaf = currNode->dataPointIndices.size();
 				//cout<<"largestleaf="<<largest_leaf<<endl;
 				
-			}
+			}*/
             for(int in = 0; in < currNode->dataPointIndices.size(); in++){
                 _pointToNode[currNode->dataPointIndices[in]] = currNode->nodeId;
             }
@@ -150,6 +146,9 @@ void itree::insertAllPoints(){
 }
 
 }
+		
+};
+
 
 
 

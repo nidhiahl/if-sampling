@@ -1,6 +1,6 @@
 #include <iostream>
-#include "./data.cpp"
-#include "./iforest.cpp"
+#include "./data.h"
+#include "./iforest.h"
 #include "./ifSampling.h"
 
 
@@ -33,43 +33,10 @@ int main(int argc, char* argv[])      //(argv[1] = inputdataFile.csv
 	iforest *iForestObject = new iforest(refDataObject, 100, 256);
 	iforest &refiForestObject = *iForestObject;
 	
-	iForestObject->constructiForest();
-	iForestObject->computeNodeMass();
 	
 	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &end_matrix);
     double matrixTime =  (((end_matrix.tv_sec - start_matrix.tv_sec) * 1e9)+(end_matrix.tv_nsec - start_matrix.tv_nsec))*1e-9;
 	
 
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+return 0;
 }

@@ -4,31 +4,17 @@
 #include <unordered_map>
 #include "data.h"
 #include "itree.h"
+#include <unordered_set>
+#include <queue>
+#include <math.h>
 
 class iforest
 {
-    public:
-	iforest(const data & , int , int );
-	virtual ~iforest();
-	void fit();
-	void constructiForest();
-	void insertAllPoints();
-	
 
-	private:    
-	public:
-    
-    //private:
-    int _numiTrees;										//number of iTrees in the iForest.
-	int _sampleSize;									//sample size representing the iForest.
-    int _maxTreeHeight;									//max Height of each iTree in iForest.
-  	int _maxNumOfNodes;									//max number of node possible in each iTree.
-	const data & _dataObject;
-	vector<itree*> _iTrees;								//list of pointers to the iTrees in the forest.
-};
-
-
-iforest::iforest(const data & dataObject, int numiTrees, int sampleSize): _dataObject(dataObject), _numiTrees(numiTrees), _sampleSize(sampleSize){
+public:
+//iforest(){}
+//iforest(const data & dataObject, int numiTrees, int sampleSize): _dataObject(dataObject), _numiTrees(numiTrees), _sampleSize(sampleSize){}
+iforest(const data & dataObject, int numiTrees, int sampleSize): _dataObject(dataObject), _numiTrees(numiTrees), _sampleSize(sampleSize){
 	int totalPoints = _dataObject.getnumInstances();	
 	if(_sampleSize < 1){
 		_sampleSize = totalPoints * _sampleSize < 256 ? 256 : _sampleSize;
@@ -39,26 +25,41 @@ iforest::iforest(const data & dataObject, int numiTrees, int sampleSize): _dataO
 	_iTrees.resize(_numiTrees);		
 }
 
+virtual ~iforest(){}
 
-
-void iforest::fit(){
+void fit(){
 	constructiForest();	
 	insertAllPoints();
 }
 
 
 
-void iforest::constructiForest(){
+void constructiForest(){
     for(int treeId = 0; treeId < _numiTrees; treeId++){
 		//_iTrees[treeId] = new itree(_dataObject, _sampleSize, _maxTreeHeight, _maxNumOfNodes);
 		//_iTrees[treeId]->constructiTree();
 	}
 }
 
-void iforest::insertAllPoints(){
+void insertAllPoints(){
 	for(int treeId = 0; treeId < this->_numiTrees; treeId++){
 		//cout<<"treeId="<<treeId<<endl;
        // _iTrees[treeId]->computeNodeMassforTree();
     }   
 }
+
+	public:
+    
+    //private:
+    int _numiTrees;										//number of iTrees in the iForest.
+	int _sampleSize;									//sample size representing the iForest.
+    int _maxTreeHeight;									//max Height of each iTree in iForest.
+  	int _maxNumOfNodes;									//max number of node possible in each iTree.
+	const data & _dataObject;
+	vector<itree*> _iTrees;								//list of pointers to the iTrees in the forest.
+
+
+
+
+};
 #endif // IFOREST_H

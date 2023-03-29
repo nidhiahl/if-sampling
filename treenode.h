@@ -2,8 +2,8 @@
 #define TREENODE_H
 # include "data.h"
 #include <vector>
-#include <boost/serialization/list.hpp>
-
+#include <math.h>
+#include <random>
 
 class treenode
 {
@@ -25,23 +25,7 @@ class treenode
         int nodeMass;
 		 
 
-        treenode();
-        treenode(int);
-        virtual ~treenode();
-		//double invertedCumulativeProbabilityFunction(double target)
-        double splitInfoSelection(const data &);
-		double PGIFsplitInfoSelection(const data &);
-        void createLeftChild();
-		void createRightChild();
-
-    protected:
-
-    private:
-};
-
-
-
-treenode::treenode()
+treenode()
 {
     splitAttribute = -1;
     isLeaf = bool(0);
@@ -58,7 +42,7 @@ treenode::treenode()
 
 }
 
-treenode::treenode(int nId): nodeId(nId)
+treenode(int nId): nodeId(nId)
 {
     splitAttribute = -1;
     isLeaf = bool(0);
@@ -76,15 +60,10 @@ treenode::treenode(int nId): nodeId(nId)
 	
 }
 
-treenode::~treenode()
-{
-    //dtor
-}
+virtual ~treenode(){}
+
 
 ///for PGIF
-
-
-
 double invertedCumulativeProbabilityFunction(double target)
 {
     double x = 0.0;
@@ -98,7 +77,7 @@ double invertedCumulativeProbabilityFunction(double target)
     return x;
 }
 
-double treenode::PGIFsplitInfoSelection(const data &dataObject){
+double PGIFsplitInfoSelection(const data &dataObject){
 	
 	int powerForSegment=1;
     std::random_device random_seed_generator;
@@ -149,7 +128,7 @@ double treenode::PGIFsplitInfoSelection(const data &dataObject){
 
 
 
-double treenode::splitInfoSelection(const data &dataObject){
+double splitInfoSelection(const data &dataObject){
 	std::random_device random_seed_generator;
     std::mt19937_64 RandomEngine(random_seed_generator());
 
@@ -177,17 +156,25 @@ double treenode::splitInfoSelection(const data &dataObject){
 }
 
 
-void treenode::createLeftChild(){
+void createLeftChild(){
 	lChildAdd = new treenode(2*nodeId+1);
 	lChildAdd->parentAdd = this;
 	lChildId = lChildAdd->nodeId;
 }
 
-void treenode::createRightChild(){
+void createRightChild(){
 	rChildAdd = new treenode(2*nodeId+2);
 	rChildAdd->parentAdd = this;
 	rChildId = rChildAdd->nodeId;
 }
+
+
+
+
+};
+
+
+
 
 
 #endif // TREENODE_H
