@@ -23,6 +23,7 @@ class treenode
         int nodeHeight;
         bool isLeaf;
         int nodeMass;
+		long double averagePLOfNode;
 		 
 
 treenode()
@@ -35,6 +36,7 @@ treenode()
     rChildId = -1;
     nodeMass = 0;
     nodeSize = 0;
+	averagePLOfNode = 0;
     dataPointIndices.resize(0);
     parentAdd = nullptr;
     lChildAdd = nullptr;
@@ -52,6 +54,7 @@ treenode(int nId): nodeId(nId)
 	nodeHeight = (int)log2(nodeId+1)+1;
     nodeMass = 0;
     nodeSize = 0;
+	averagePLOfNode = 0;
     dataPointIndices.resize(0);
     parentAdd = nullptr;
     lChildAdd = nullptr;
@@ -133,8 +136,8 @@ double splitInfoSelection(const data &dataObject){
     std::mt19937_64 RandomEngine(random_seed_generator());
 
 
-	int maxVal = -999999;
-	int minVal = 999999;
+	double maxVal = -999999;
+	double minVal = 999999;
 	int attempts = 0;
 	while(attempts < 10){
 		splitAttribute = std::uniform_int_distribution<>(0, dataObject.getnumAttributes()-1)(RandomEngine);
@@ -168,8 +171,16 @@ void createRightChild(){
 	rChildId = rChildAdd->nodeId;
 }
 
+void computeAveragePLOfNode(){
+	averagePLOfNode = nodeHeight-1+avgPathLengthEstimationOfUnbuiltBST();
+}
 
-
+long double avgPathLengthEstimationOfUnbuiltBST(){
+	long double avgPathLengthEstimationOfBST = 0;
+	if(nodeSize == 2){avgPathLengthEstimationOfBST=1;}
+	else if(nodeSize > 2){avgPathLengthEstimationOfBST = (2 * (log(nodeSize-1) + 0.5772156649)) - (2 * (nodeSize - 1) / nodeSize);}	
+	return (avgPathLengthEstimationOfBST);
+}
 
 };
 

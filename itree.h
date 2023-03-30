@@ -9,20 +9,16 @@
 
 class itree
 {
-    public:
+public:
         
-		treenode * rootNode;
-		vector<int> _pointToNode;   //stores leaf node associated with each point in the dataset.
-		vector<treenode*> treeNodes;
+treenode * rootNode;
+vector<int> _pointToNode;   //stores leaf node associated with each point in the dataset.
+vector<treenode*> treeNodes;
 
-        
-    //protected:
-
-    //private:
-	int _sampleSize;    
-	int _maxTreeHeight;
-    int _maxNumOfNodes;
-	const data & _dataObject;
+int _sampleSize;    
+int _maxTreeHeight;
+int _maxNumOfNodes;
+const data & _dataObject;
 
 itree(const data & dataObject): _dataObject(dataObject){}
 
@@ -30,16 +26,20 @@ itree(const data & dataObject, int sampleSize, int maxTreeHeight, int maxNumOfNo
 
 virtual ~itree(){}
 
-
-
 void constructiTree(){
+	//cout<<"constructiTree"<<endl;
 	treeNodes.resize(_maxNumOfNodes,nullptr);
+	//cout<<"treenodes resize"<<endl;
     rootNode = new treenode(0);
+	//cout<<"root node created"<<endl;
 	treeNodes[0] = rootNode;
+	//cout<<"treenode[0] initialized with root node"<<endl;
     rootNode->dataPointIndices = _dataObject.getSample(_sampleSize);
+	//cout<<"samples picked from data"<<endl;
 	if(treeNodes[0]->dataPointIndices.size() == 0){
 		treeNodes[0] = nullptr;
 	}
+	//cout<<"root node created and populated with the smaple"<<endl;
 	treenode *currNode;
 	for(int nodeId =0; nodeId < _maxNumOfNodes; nodeId++){
 		 currNode = treeNodes[nodeId];
@@ -50,12 +50,13 @@ void constructiTree(){
 		currNode->nodeSize = currNode->dataPointIndices.size();
 		if(currNode->nodeSize <=1 || currNode->nodeHeight == _maxTreeHeight){
 			currNode->isLeaf = bool(1);
+			currNode->computeAveragePLOfNode();
         	currNode->dataPointIndices.clear();
         	currNode->dataPointIndices.resize(0);
 		}
 		else{
-			//currNode->splitValue = currNode->PGIFsplitInfoSelection(_dataObject);
-			currNode->splitValue = currNode->splitInfoSelection(_dataObject);
+			currNode->splitValue = currNode->PGIFsplitInfoSelection(_dataObject);
+			//currNode->splitValue = currNode->splitInfoSelection(_dataObject);
     		currNode->createLeftChild();
 			currNode->createRightChild();
 			for(int i=0; i<currNode->nodeSize; i++){     
@@ -89,40 +90,26 @@ void insertAllPoints(){
 			rootNode->dataPointIndices.push_back(i);
 	}
 	//rootNode->nodeMass = numOfPointsPresent;
-    queue<treenode*> BFTforNodes;
-    BFTforNodes.push(rootNode);
-    while(!BFTforNodes.empty()){
-    	treenode *currNode = BFTforNodes.front();
-		BFTforNodes.pop();
+	treenode *currNode;
+	for(int nodeId = 0; nodeId < _maxNumOfNodes; nodeId++){
+		currNode = treeNodes[nodeId];
+		if(currNode==nullptr){
+			continue;
+		}
 		currNode->nodeMass = currNode->dataPointIndices.size();
-		//cout<<"nodeId="<<currNode->nodeId<<" is marked node with mass="<<currNode->nodeMass/numOfPointsPresent<<endl;
-			//cout<<"nodeId="<<currNode->nodeId<<" is marked node with mass="<<currNode->nodeMass<<endl;
-			//cout<<"nodeId="<<currNode->nodeId<<" is marked node with mass="<<currNode->dataPointIndices.size()<<endl;
-			
-		//_nodeMass[currNode->nodeId]=currNode->nodeMass;
+		
 		if(currNode->isLeaf){
-			//cout<<currNode->nodeId<<"->dataPointIndices.size();"<<currNode->dataPointIndices.size()<<endl;
-			/*if(smallest_leaf>currNode->dataPointIndices.size()){
-				//cout<<"smallestleaf="<<smallest_leaf<<endl;
-				smallest_leaf = currNode->dataPointIndices.size();
-				//cout<<"smallestleaf="<<smallest_leaf<<endl;
-			}
-            if(largest_leaf<currNode->dataPointIndices.size()){
-				//cout<<"largestleaf="<<largest_leaf<<endl;
-				largest_leaf = currNode->dataPointIndices.size();
-				//cout<<"largestleaf="<<largest_leaf<<endl;
-				
-			}*/
             for(int in = 0; in < currNode->dataPointIndices.size(); in++){
                 _pointToNode[currNode->dataPointIndices[in]] = currNode->nodeId;
             }
             continue;
         }
-        currNode->lChildAdd->dataPointIndices.resize(0);
-		currNode->rChildAdd->dataPointIndices.resize(0);
+        //currNode->lChildAdd->dataPointIndices.resize(0);
+		//currNode->rChildAdd->dataPointIndices.resize(0);
+		
+
 		for(int i=0; i<currNode->dataPointIndices.size(); i++){
 			if(_dataObject.dataVector[currNode->dataPointIndices[i]]->attributes[currNode->splitAttribute] < currNode->splitValue){
-	
             	 if(currNode->lChildAdd == nullptr){
             	 	currNode->createLeftChild();
             	 	currNode->lChildAdd->isLeaf = bool(1);
@@ -139,11 +126,7 @@ void insertAllPoints(){
         }
         //currNode->dataPointIndices.clear();
 		//currNode->dataPointIndices.resize(0);
-        		
-   		BFTforNodes.push(currNode->lChildAdd);
-   		BFTforNodes.push(currNode->rChildAdd);
-
-}
+	}
 
 }
 		

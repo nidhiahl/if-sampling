@@ -110,8 +110,11 @@ void data::createDataVector(const string & dataFile){
 vector<int> & data::getSample(int sampleSize) const {
 	vector<int>* sample = new vector<int>;            
 	vector<int> &refSample = *sample;
+	//cout<<"start of getsmaple"<<endl;
 	int cnt = 0;
+	//cout<<"num instance="<<numInstances<<endl;
 	for(int i = 0; i < numInstances; i++){
+		//cout<<"dataVector[i]->isPresent="<<dataVector[i]->isPresent<<endl;
 		if(dataVector[i]->isPresent){
 			(*sample).push_back(i);
 			cnt++;
