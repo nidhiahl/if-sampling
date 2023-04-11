@@ -14,7 +14,7 @@ public:
 treenode * rootNode;
 vector<int> _pointToNode;   //stores leaf node associated with each point in the dataset.
 vector<treenode*> treeNodes;
-
+vector<int> _leafNodes;
 int _sampleSize;    
 int _maxTreeHeight;
 int _maxNumOfNodes;
@@ -28,6 +28,7 @@ virtual ~itree(){}
 
 void constructiTree(){
 	//cout<<"constructiTree"<<endl;
+	_leafNodes.resize(0);
 	treeNodes.resize(_maxNumOfNodes,nullptr);
 	//cout<<"treenodes resize"<<endl;
     rootNode = new treenode(0);
@@ -53,6 +54,7 @@ void constructiTree(){
 			currNode->computeAveragePLOfNode();
         	currNode->dataPointIndices.clear();
         	currNode->dataPointIndices.resize(0);
+			_leafNodes.push_back(currNode->nodeId);
 		}
 		else{
 			currNode->splitValue = currNode->PGIFsplitInfoSelection(_dataObject);

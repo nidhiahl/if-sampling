@@ -27,17 +27,55 @@ int main(int argc, char* argv[])      //(argv[1] = inputdataFile.csv
 
 //Create iforest
 
-	struct timespec start_matrix,end_matrix;
-	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start_matrix);
+	struct timespec start_iforest,end_iforest;
+	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start_iforest);
 
 	iforest *iForestObject = new iforest(refDataObject, 100, 256);
 	iforest &refiForestObject = *iForestObject;
 	refiForestObject.constructiForest();
 	refiForestObject.insertAllPoints();
 	refiForestObject.computeAnomalyScore(); 
-	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &end_matrix);
-    double matrixTime =  (((end_matrix.tv_sec - start_matrix.tv_sec) * 1e9)+(end_matrix.tv_nsec - start_matrix.tv_nsec))*1e-9;
+	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &end_iforest);
+    double iforestTime =  (((end_iforest.tv_sec - start_iforest.tv_sec) * 1e9)+(end_iforest.tv_nsec - start_iforest.tv_nsec))*1e-9;
 	
-
+	struct timespec start_sampling,end_sampling;
+	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start_sampling);
+		
+	string tree_criterion = "random";
+	string leaf_criterion = "random";
+	string point_criterion = "random";		
+	ifSampling *ifSamplingObject = new ifSampling(refiForestObject);
+	ifSampling &refifSamplingObject = *ifSamplingObject;
+	refifSamplingObject.sample(tree_criterion,leaf_criterion,point_criterion,0.15);
+	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &end_sampling);
+    double samplingTime =  (((end_sampling.tv_sec - start_sampling.tv_sec) * 1e9)+(end_sampling.tv_nsec - start_sampling.tv_nsec))*1e-9;
+	
+	ofstream write_sampleSet(dataset+"/sampleSets/"+tree_criterion+"_"+leaf_criterion+"_"+point_criterion+"_sampleSet.csv",ios::out|ios::binary);
+	if(!write_sampleSet){
+		cout<<"Can not open input data file:/"+dataset+"/sampleSets/"<<tree_criterion<<"_"<<leaf_criterion<<"_"<<point_criterion<<"_sampleSet.csv"<<endl;
+		exit(0);
+	}
+	for(auto i:refifSamplingObject.sampleSet){
+		write_sampleSet<<i<<" "<<refDataObject.dataVector[i]->label<<endl;
+	}
+	write_sampleSet.close();
+	
+	
 return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

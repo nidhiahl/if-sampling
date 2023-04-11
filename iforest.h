@@ -12,6 +12,22 @@ class iforest
 {
 
 public:
+    
+    //private:
+    int _numiTrees;										//number of iTrees in the iForest.
+	int _sampleSize;									//sample size representing the iForest.
+    int _maxTreeHeight;									//max Height of each iTree in iForest.
+  	int _maxNumOfNodes;									//max number of node possible in each iTree.
+	const data & _dataObject;
+	vector<itree*> _iTrees;								//list of pointers to the iTrees in the forest.
+	vector<pair<double, int>> anomalyScore;
+
+
+
+
+
+
+public:
 //iforest(){}
 //iforest(const data & dataObject, int numiTrees, int sampleSize): _dataObject(dataObject), _numiTrees(numiTrees), _sampleSize(sampleSize){}
 iforest(const data & dataObject, int numiTrees, int sampleSize): _dataObject(dataObject), _numiTrees(numiTrees), _sampleSize(sampleSize){
@@ -56,7 +72,7 @@ void computeAnomalyScore(){
 	for(int point=0; point<totalPoints; point++){
 		avgPathLength = computeAvgPathLength(point);
 		AS = pow(2,-(avgPathLength/avgPLEstimation));
-		cout<<point<<" "<<AS<<" "<<_dataObject.dataVector[point]->label<<endl;
+		//cout<<point<<" "<<AS<<" "<<_dataObject.dataVector[point]->label<<endl;
 		anomalyScore.push_back({AS,point});
 	}
 }
@@ -76,18 +92,6 @@ long double computeAvgPathLength(int point){
 	avgPathLength /=_numiTrees;
 	return avgPathLength;
 }
-	public:
-    
-    //private:
-    int _numiTrees;										//number of iTrees in the iForest.
-	int _sampleSize;									//sample size representing the iForest.
-    int _maxTreeHeight;									//max Height of each iTree in iForest.
-  	int _maxNumOfNodes;									//max number of node possible in each iTree.
-	const data & _dataObject;
-	vector<itree*> _iTrees;								//list of pointers to the iTrees in the forest.
-	vector<pair<double, int>> anomalyScore;
-
-
-
+	
 };
 #endif // IFOREST_H
