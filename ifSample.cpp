@@ -41,6 +41,21 @@ int main(int argc, char* argv[])      //(argv[1] = inputdataFile.csv
 	struct timespec start_sampling,end_sampling;
 	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start_sampling);
 		
+	ofstream write_AS(dataset+"/sampleSets/AS.csv",ios::out|ios::binary);
+	if(!write_AS){
+		cout<<"Can not open input data file:/"+dataset+"/sampleSets/AS.csv"<<endl;
+		exit(0);
+	}
+	int point =0;
+	for(auto i:refiForestObject.anomalyScore){
+		write_AS<<point<<" "<<i<<endl;
+		point++;
+	}
+	write_AS.close();
+	
+
+
+
 	string tree_criterion = "random";
 	string leaf_criterion = "random";
 	string point_criterion = "random";		

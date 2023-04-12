@@ -20,8 +20,8 @@ public:
   	int _maxNumOfNodes;									//max number of node possible in each iTree.
 	const data & _dataObject;
 	vector<itree*> _iTrees;								//list of pointers to the iTrees in the forest.
-	vector<pair<double, int>> anomalyScore;
-
+	//vector<pair<double, int>> anomalyScore;
+	vector<double> anomalyScore;
 
 
 
@@ -73,7 +73,8 @@ void computeAnomalyScore(){
 		avgPathLength = computeAvgPathLength(point);
 		AS = pow(2,-(avgPathLength/avgPLEstimation));
 		//cout<<point<<" "<<AS<<" "<<_dataObject.dataVector[point]->label<<endl;
-		anomalyScore.push_back({AS,point});
+		//anomalyScore.push_back({AS,point});
+		anomalyScore.push_back(AS);
 	}
 }
 

@@ -57,8 +57,8 @@ void constructiTree(){
 			_leafNodes.push_back(currNode->nodeId);
 		}
 		else{
-			currNode->splitValue = currNode->PGIFsplitInfoSelection(_dataObject);
-			//currNode->splitValue = currNode->splitInfoSelection(_dataObject);
+			//currNode->splitValue = currNode->PGIFsplitInfoSelection(_dataObject);
+			currNode->splitValue = currNode->splitInfoSelection(_dataObject);
     		currNode->createLeftChild();
 			currNode->createRightChild();
 			for(int i=0; i<currNode->nodeSize; i++){     

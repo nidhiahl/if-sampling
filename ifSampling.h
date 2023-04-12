@@ -21,10 +21,11 @@ public:
 
 	virtual ~ifSampling(){}
 	
-	unordered_set<int> & sample(string tree_criterion, string leaf_criterion,string point_criterion, double sample_size){	
+	unordered_set<int> & sample(string tree_criterion, string leaf_criterion,string point_criterion, double sample_size){
+		int sampleSize=_iforestObject._dataObject.getnumInstances() * 0.15;	
 		//cout<<"numInstances="<<_iforestObject._dataObject.getnumInstances()<<endl;
-		for(int sam =0; sam < _iforestObject._dataObject.getnumInstances(); sam++ ){
-			cout<<"\nsample number="<<sam<<"-------------"<<endl;
+		while(sampleSet.size() < sampleSize){
+			//cout<<"\nsample number="<<sam<<"-------------"<<endl;
 			pickPoint(point_criterion,pickLeaf(leaf_criterion,pickTree(tree_criterion)));
 		}
 
@@ -40,7 +41,7 @@ public:
 		std::random_device random_seed_generator;
     	std::mt19937_64 RandomEngine(random_seed_generator());
 		int picked_treeId = std::uniform_int_distribution<>(0, _iforestObject._numiTrees-1)(RandomEngine);
-		cout<<"picked_treeId="<<picked_treeId<<"----";
+		//cout<<"picked_treeId="<<picked_treeId<<"----";
 		return _iforestObject._iTrees[picked_treeId];
 	}
 	
@@ -54,7 +55,7 @@ public:
 		std::random_device random_seed_generator;
     	std::mt19937_64 RandomEngine(random_seed_generator());
 		int picked_leafId = picked_tree->_leafNodes[std::uniform_int_distribution<>(0, picked_tree->_leafNodes.size()-1)(RandomEngine)];
-		cout<<"picked_leafId="<<picked_leafId<<"----isLeaf="<<picked_tree->treeNodes[picked_leafId]->isLeaf<<"----";
+		//cout<<"picked_leafId="<<picked_leafId<<"----isLeaf="<<picked_tree->treeNodes[picked_leafId]->isLeaf<<"----";
 		
 		return picked_tree->treeNodes[picked_leafId];
 	}
@@ -67,11 +68,14 @@ public:
 	void pickRandomPoint(treenode * picked_leaf){
 		std::random_device random_seed_generator;
     	std::mt19937_64 RandomEngine(random_seed_generator());
-		int picked_point = picked_leaf->dataPointIndices[std::uniform_int_distribution<>(0, picked_leaf->dataPointIndices.size()-1)(RandomEngine)];
-		cout<<"picked_pointId="<<picked_point<<"----";
 		
-		if(sampleSet.insert(picked_point).second){
-			pickRandomPoint(picked_leaf);
+		for(int i=0; i<picked_leaf->dataPointIndices.size();i++){
+			int picked_point = picked_leaf->dataPointIndices[std::uniform_int_distribution<>(0, picked_leaf->dataPointIndices.size()-1)(RandomEngine)];
+			//cout<<"picked_pointId="<<picked_point<<"----";
+			cout<<"_iforestObject.anomalyScore["<<picked_point<<"]="<<_iforestObject.anomalyScore[picked_point]<<endl;
+			if(_iforestObject.anomalyScore[picked_point] <= 0.5 && sampleSet.insert(picked_point).second){
+				i=picked_leaf->dataPointIndices.size();
+			}
 		}
 	}
 	
