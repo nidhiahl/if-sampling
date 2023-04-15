@@ -13,10 +13,12 @@ class ifSampling
 public:
 	const iforest & _iforestObject;     
 	unordered_set<int> sampleSet;
+	vector<vector<float>> discarding_threshold_for_leaf;
+	vector<bool> tree_picked_first_time;
 	
 public:
 	ifSampling( iforest & iforestObject): _iforestObject(iforestObject){
-		
+		tree_picked_first_time.resize(_iforestObject._numiTrees,bool(1));
 	}
 
 	virtual ~ifSampling(){}
@@ -49,6 +51,11 @@ public:
 		if(leaf_criterion=="random"){
 			return pickRandomLeaf(picked_tree);
 		}
+		else if(leaf_criterion=="hard_discard" || "soft_discard"){
+			discarding_threshold_for_leaf.resize(_iforestObject._numiTrees);
+			if(pickLessNoisyLeaf!=NULL)
+			return pickLessNoisyLeaf(leaf_criterion,picked_tree);
+		}
 	}
 
 	treenode * pickRandomLeaf(itree * picked_tree){
@@ -58,6 +65,54 @@ public:
 		//cout<<"picked_leafId="<<picked_leafId<<"----isLeaf="<<picked_tree->treeNodes[picked_leafId]->isLeaf<<"----";
 		
 		return picked_tree->treeNodes[picked_leafId];
+	}
+
+	/**Pick No Noise Leaf**/
+	treenode * pickLessNoisyLeaf(string leaf_criterion, itree * picked_tree){
+		if(tree_picked_first_time[picked_tree->_treeId]){
+			tree_picked_first_time[picked_tree->_treeId]=bool(0);
+			discarding_threshold_for_leaf[picked_tree->_treeId].resize(picked_tree->_leafNodes.size(), 0.0);
+			if(leaf_criterion == "hard_discard"){
+				hard_discard_noisy_leaf(picked_tree);
+			}else if(leaf_criterion=="soft_discard"){
+				soft_discard_noisy_leaf(picked_tree);
+			}
+		}
+		std::random_device random_seed_generator;
+    	std::mt19937_64 RandomEngine(random_seed_generator());
+		for(auto l:picked_tree->_leafNodes){
+			int rnd_leaf = std::uniform_int_distribution<>(0, picked_tree->_leafNodes.size()-1)(RandomEngine);
+			int picked_leafId = picked_tree->_leafNodes[rnd_leaf];
+			if(std::uniform_int_distribution<>(0, 1)(RandomEngine) < discarding_threshold_for_leaf[picked_tree->_treeId][rnd_leaf]){
+				return picked_tree->treeNodes[picked_leafId];
+			}
+		}
+		return NULL;
+	}
+	
+	void hard_discard_noisy_leaf(itree * picked_tree){
+		for(int l =0; l < picked_tree->_leafNodes.size(); l++){
+			int leafid = picked_tree->_leafNodes[l];
+			for(auto point:picked_tree->treeNodes[leafid]->dataPointIndices){
+				if(_iforestObject.anomalyScore[point] > 0.5){
+					discarding_threshold_for_leaf[picked_tree->_treeId][l] = 1;
+					break;
+				}
+			}
+		}
+	}
+
+	void soft_discard_noisy_leaf(itree * picked_tree){
+		for(int l =0; l < picked_tree->_leafNodes.size(); l++){
+			int leafid = picked_tree->_leafNodes[l];
+			float countNoise = 0;
+			for(auto point:picked_tree->treeNodes[leafid]->dataPointIndices){
+				if(_iforestObject.anomalyScore[point] > 0.5){
+					countNoise++;
+				}
+			}
+			discarding_threshold_for_leaf[picked_tree->_treeId][l] = countNoise/picked_tree->treeNodes[leafid]->dataPointIndices.size();
+		}
 	}
 
 	void pickPoint(string point_criterion, treenode * picked_leaf){

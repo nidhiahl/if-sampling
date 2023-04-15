@@ -53,7 +53,7 @@ void fit(){
 void constructiForest(){
     for(int treeId = 0; treeId < _numiTrees; treeId++){
 		//cout<<"treeId="<<treeId<<endl;
-		_iTrees[treeId] = new itree(_dataObject, _sampleSize, _maxTreeHeight, _maxNumOfNodes);
+		_iTrees[treeId] = new itree(_dataObject, _sampleSize, _maxTreeHeight, _maxNumOfNodes,treeId);
 		_iTrees[treeId]->constructiTree();
 	}
 }

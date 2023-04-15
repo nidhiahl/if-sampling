@@ -18,11 +18,12 @@ vector<int> _leafNodes;
 int _sampleSize;    
 int _maxTreeHeight;
 int _maxNumOfNodes;
+int _treeId;
 const data & _dataObject;
 
 itree(const data & dataObject): _dataObject(dataObject){}
 
-itree(const data & dataObject, int sampleSize, int maxTreeHeight, int maxNumOfNodes): _dataObject(dataObject), _sampleSize(sampleSize), _maxTreeHeight(maxTreeHeight), _maxNumOfNodes(maxNumOfNodes){}
+itree(const data & dataObject, int sampleSize, int maxTreeHeight, int maxNumOfNodes, int treeId): _dataObject(dataObject), _sampleSize(sampleSize), _maxTreeHeight(maxTreeHeight), _maxNumOfNodes(maxNumOfNodes), _treeId(treeId){}
 
 virtual ~itree(){}
 
