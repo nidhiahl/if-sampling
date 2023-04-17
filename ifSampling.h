@@ -15,6 +15,7 @@ public:
 	unordered_set<int> sampleSet;
 	vector<vector<float>> discarding_threshold_for_leaf;
 	vector<bool> tree_picked_first_time;
+	vector<vector<int>> count_already_picked_points;
 	
 public:
 	ifSampling( iforest & iforestObject): _iforestObject(iforestObject){
@@ -24,20 +25,50 @@ public:
 	virtual ~ifSampling(){}
 	
 	unordered_set<int> & sample(string tree_criterion, string leaf_criterion,string point_criterion, double sample_size){
-		int sampleSize=_iforestObject._dataObject.getnumInstances() * 0.15;	
+		int sampleSize=_iforestObject._dataObject.getnumInstances() * sample_size;	
+		
+		if(point_criterion == "core_points"||"border_points"){
+			count_already_picked_points.resize(_iforest._numiTrees);
+			for(int tree = 0; tree< count_already_picked_points
+		}
+			
 		//cout<<"numInstances="<<_iforestObject._dataObject.getnumInstances()<<endl;
 		while(sampleSet.size() < sampleSize){
 			//cout<<"\nsample number="<<sam<<"-------------"<<endl;
 			itree * picked_tree = pickTree(tree_criterion);
-			treenode * picked_leaf = pickLeaf(leaf_criterion, picked_tree);
-			pickPoint(point_criterion,picked_leaf);
-		}
 
+			discarding_threshold_for_leaf.resize(_iforestObject._numiTrees);
+			if(tree_picked_first_time[picked_tree->_treeId]){
+				tree_picked_first_time[picked_tree->_treeId]=bool(0);
+				discarding_threshold_for_leaf[picked_tree->_treeId].resize(picked_tree->_leafNodes.size(), 0.0);
+				if(leaf_criterion == "hard_discard"){
+					hard_discard_noisy_leaf(picked_tree);
+				}else if(leaf_criterion=="soft_discard"){
+					soft_discard_noisy_leaf(picked_tree);
+				}
+
+				if(point_criterion == "core_points"||"border_points"){
+					count_already_picked_points[picked_tree->_treeId].resize(picked_tree->_leafNodes.size(),0);
+				}
+			}
+		
+			treenode * picked_leaf;
+			for(auto l:_iforest._leafNodes){
+				picked_leaf = pickLeaf(leaf_criterion, picked_tree);
+				if(picked_leaf){
+					if(pickPoint(point_criterion,picked_leaf)){break;}
+				}
+			}
+		}
 	}
 	
 	itree * pickTree(string tree_criterion){
 		if(tree_criterion=="random"){
 			return pickRandomTree();
+		}else if(tree_criterion = "max_aggrement"){
+		}else{
+			cout<<tree_criterion<" is not an appropriate criterion for picking up a iTree, Input any of the two strings: \ni.random\nii.max_agreemnent";
+			exit(0);
 		}
 	}
 	
@@ -54,18 +85,12 @@ public:
 			return pickRandomLeaf(picked_tree);
 		}
 		else if(leaf_criterion=="hard_discard" || "soft_discard"){
-			discarding_threshold_for_leaf.resize(_iforestObject._numiTrees);
-			if(tree_picked_first_time[picked_tree->_treeId]){
-				tree_picked_first_time[picked_tree->_treeId]=bool(0);
-				discarding_threshold_for_leaf[picked_tree->_treeId].resize(picked_tree->_leafNodes.size(), 0.0);
-				if(leaf_criterion == "hard_discard"){
-					hard_discard_noisy_leaf(picked_tree);
-				}else if(leaf_criterion=="soft_discard"){
-					soft_discard_noisy_leaf(picked_tree);
-				}
-			}
+			
 			//treenode * lessNoisyLeaf = pickLessNoisyLeaf(leaf_criterion,picked_tree);
 			return pickLessNoisyLeaf(leaf_criterion,picked_tree);
+		}else
+			cout<<leaf_criterion<" is not an appropriate criterion for picking up a node, Input any of the three strings: \ni.random\nii.hard_discard\niii.soft_discard";
+			exit(0);
 		}
 	}
 
@@ -118,12 +143,23 @@ public:
 		}
 	}
 
-	void pickPoint(string point_criterion, treenode * picked_leaf){
+	bool pickPoint(string point_criterion, treenode * picked_leaf){
+		bool point_picked;
 		if(point_criterion=="random"){
-			pickRandomPoint(picked_leaf);
+			point_picked = pickRandomPoint(picked_leaf);
+		}else if(point_criterion = "core_points"){
+			point_picked = pickCorePoint(picked_leaf);
+		}else if(point_criterion = "border_points"){
+			point_picked = pickBorderPoint(picked_leaf);
+		}else{
+			cout<<point_criterion<" is not an appropriate criterion for picking up a point, Input any of the three strings: \ni.random\nii.core_points\niii.border_points";
+			exit(0);
 		}
+		
+		return point_picked;
 	}
-	void pickRandomPoint(treenode * picked_leaf){
+
+	bool pickRandomPoint(treenode * picked_leaf){
 		std::random_device random_seed_generator;
     	std::mt19937_64 RandomEngine(random_seed_generator());
 		
@@ -132,9 +168,15 @@ public:
 			//cout<<"picked_pointId="<<picked_point<<"----";
 			cout<<"_iforestObject.anomalyScore["<<picked_point<<"]="<<_iforestObject.anomalyScore[picked_point]<<endl;
 			if(_iforestObject.anomalyScore[picked_point] <= 0.5 && sampleSet.insert(picked_point).second){
-				i=picked_leaf->dataPointIndices.size();
+				//i=picked_leaf->dataPointIndices.size();
+				return bool(1);
 			}
 		}
+		return bool(0);
+	}
+
+	bool pickCorePoint(treenode * picked_leaf){
+		count_already_picked_points = 0;
 	}
 	
 };
