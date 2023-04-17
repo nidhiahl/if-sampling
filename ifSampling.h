@@ -28,7 +28,9 @@ public:
 		//cout<<"numInstances="<<_iforestObject._dataObject.getnumInstances()<<endl;
 		while(sampleSet.size() < sampleSize){
 			//cout<<"\nsample number="<<sam<<"-------------"<<endl;
-			pickPoint(point_criterion,pickLeaf(leaf_criterion,pickTree(tree_criterion)));
+			itree * picked_tree = pickTree(tree_criterion);
+			treenode * picked_leaf = pickLeaf(leaf_criterion, picked_tree);
+			pickPoint(point_criterion,picked_leaf);
 		}
 
 	}
@@ -53,7 +55,16 @@ public:
 		}
 		else if(leaf_criterion=="hard_discard" || "soft_discard"){
 			discarding_threshold_for_leaf.resize(_iforestObject._numiTrees);
-			if(pickLessNoisyLeaf!=NULL)
+			if(tree_picked_first_time[picked_tree->_treeId]){
+				tree_picked_first_time[picked_tree->_treeId]=bool(0);
+				discarding_threshold_for_leaf[picked_tree->_treeId].resize(picked_tree->_leafNodes.size(), 0.0);
+				if(leaf_criterion == "hard_discard"){
+					hard_discard_noisy_leaf(picked_tree);
+				}else if(leaf_criterion=="soft_discard"){
+					soft_discard_noisy_leaf(picked_tree);
+				}
+			}
+			//treenode * lessNoisyLeaf = pickLessNoisyLeaf(leaf_criterion,picked_tree);
 			return pickLessNoisyLeaf(leaf_criterion,picked_tree);
 		}
 	}
@@ -69,15 +80,7 @@ public:
 
 	/**Pick No Noise Leaf**/
 	treenode * pickLessNoisyLeaf(string leaf_criterion, itree * picked_tree){
-		if(tree_picked_first_time[picked_tree->_treeId]){
-			tree_picked_first_time[picked_tree->_treeId]=bool(0);
-			discarding_threshold_for_leaf[picked_tree->_treeId].resize(picked_tree->_leafNodes.size(), 0.0);
-			if(leaf_criterion == "hard_discard"){
-				hard_discard_noisy_leaf(picked_tree);
-			}else if(leaf_criterion=="soft_discard"){
-				soft_discard_noisy_leaf(picked_tree);
-			}
-		}
+		
 		std::random_device random_seed_generator;
     	std::mt19937_64 RandomEngine(random_seed_generator());
 		for(auto l:picked_tree->_leafNodes){
@@ -87,7 +90,7 @@ public:
 				return picked_tree->treeNodes[picked_leafId];
 			}
 		}
-		return NULL;
+		return nullptr;
 	}
 	
 	void hard_discard_noisy_leaf(itree * picked_tree){
