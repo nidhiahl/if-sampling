@@ -57,11 +57,11 @@ int main(int argc, char* argv[])      //(argv[1] = inputdataFile.csv
 
 
 	string tree_criterion = "random";
-	string leaf_criterion = "random";
+	string leaf_criterion = "soft_discard";
 	string point_criterion = "random";		
 	ifSampling *ifSamplingObject = new ifSampling(refiForestObject);
 	ifSampling &refifSamplingObject = *ifSamplingObject;
-	refifSamplingObject.sample(tree_criterion,leaf_criterion,point_criterion,0.15);
+	refifSamplingObject.sample(tree_criterion,leaf_criterion,point_criterion,0.05);
 	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &end_sampling);
     double samplingTime =  (((end_sampling.tv_sec - start_sampling.tv_sec) * 1e9)+(end_sampling.tv_nsec - start_sampling.tv_nsec))*1e-9;
 	
