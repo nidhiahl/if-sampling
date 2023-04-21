@@ -1,0 +1,1250 @@
+dPTime=0.00180189
+data read done
+
+sample number=0-------------picked_treeId=10----pickBorderPoint started, numPoints=6
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=1-------------picked_treeId=28----pickBorderPoint started, numPoints=175
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+6th max point search start
+6th max point picked
+incremented number of points picked from the node in hand
+7th max point search start
+7th max point picked
+incremented number of points picked from the node in hand
+8th max point search start
+8th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=2-------------picked_treeId=88----pickBorderPoint started, numPoints=8
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=3-------------picked_treeId=16----pickBorderPoint started, numPoints=7
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=4-------------picked_treeId=78----pickBorderPoint started, numPoints=4
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=5-------------picked_treeId=5----pickBorderPoint started, numPoints=6
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=6-------------picked_treeId=34----pickBorderPoint started, numPoints=16
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=7-------------picked_treeId=15----pickBorderPoint started, numPoints=29
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=8-------------picked_treeId=44----pickBorderPoint started, numPoints=2
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=6
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=9-------------picked_treeId=23----pickBorderPoint started, numPoints=1
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=3
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=4
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=3
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=10-------------picked_treeId=4----pickBorderPoint started, numPoints=3
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=11-------------picked_treeId=60----pickBorderPoint started, numPoints=4
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=8
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=12-------------picked_treeId=19----pickBorderPoint started, numPoints=4
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=13-------------picked_treeId=80----pickBorderPoint started, numPoints=4
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=14-------------picked_treeId=56----pickBorderPoint started, numPoints=9
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=15-------------picked_treeId=34----pickBorderPoint started, numPoints=2
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=3
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=16-------------picked_treeId=10----pickBorderPoint started, numPoints=32
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+6th max point search start
+6th max point picked
+incremented number of points picked from the node in hand
+7th max point search start
+7th max point picked
+incremented number of points picked from the node in hand
+8th max point search start
+8th max point picked
+incremented number of points picked from the node in hand
+9th max point search start
+9th max point picked
+incremented number of points picked from the node in hand
+10th max point search start
+10th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=17-------------picked_treeId=35----pickBorderPoint started, numPoints=41
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=18-------------picked_treeId=38----pickBorderPoint started, numPoints=10
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=19-------------picked_treeId=75----pickBorderPoint started, numPoints=3
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=2
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=20-------------picked_treeId=32----pickBorderPoint started, numPoints=143
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=21-------------picked_treeId=93----pickBorderPoint started, numPoints=6
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=22-------------picked_treeId=48----pickBorderPoint started, numPoints=14
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=23-------------picked_treeId=75----pickBorderPoint started, numPoints=6
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=24-------------picked_treeId=43----pickBorderPoint started, numPoints=4
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=25-------------picked_treeId=78----pickBorderPoint started, numPoints=11
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=26-------------picked_treeId=92----pickBorderPoint started, numPoints=9
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=27-------------picked_treeId=83----pickBorderPoint started, numPoints=3
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=6
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=5
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=28-------------picked_treeId=58----pickBorderPoint started, numPoints=13
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+6th max point search start
+6th max point picked
+incremented number of points picked from the node in hand
+7th max point search start
+7th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=29-------------picked_treeId=37----pickBorderPoint started, numPoints=7
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=30-------------picked_treeId=52----pickBorderPoint started, numPoints=4
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=8
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=31-------------picked_treeId=83----pickBorderPoint started, numPoints=19
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=32-------------picked_treeId=19----pickBorderPoint started, numPoints=6
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=5
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=33-------------picked_treeId=61----pickBorderPoint started, numPoints=6
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=5
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=17
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=34-------------picked_treeId=8----pickBorderPoint started, numPoints=4
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=4
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=15
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+6th max point search start
+6th max point picked
+incremented number of points picked from the node in hand
+7th max point search start
+7th max point picked
+incremented number of points picked from the node in hand
+8th max point search start
+8th max point picked
+incremented number of points picked from the node in hand
+9th max point search start
+9th max point picked
+incremented number of points picked from the node in hand
+10th max point search start
+10th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=35-------------picked_treeId=49----pickBorderPoint started, numPoints=6
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=13
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=36-------------picked_treeId=19----pickBorderPoint started, numPoints=164
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=37-------------picked_treeId=12----pickBorderPoint started, numPoints=1
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=2
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=7
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=38-------------picked_treeId=95----pickBorderPoint started, numPoints=23
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=39-------------picked_treeId=16----pickBorderPoint started, numPoints=85
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=40-------------picked_treeId=11----pickBorderPoint started, numPoints=4
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=2
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=16
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=41-------------picked_treeId=17----pickBorderPoint started, numPoints=12
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=42-------------picked_treeId=95----pickBorderPoint started, numPoints=8
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=43-------------picked_treeId=29----pickBorderPoint started, numPoints=10
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=44-------------picked_treeId=77----pickBorderPoint started, numPoints=17
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+6th max point search start
+6th max point picked
+incremented number of points picked from the node in hand
+7th max point search start
+7th max point picked
+incremented number of points picked from the node in hand
+8th max point search start
+8th max point picked
+incremented number of points picked from the node in hand
+9th max point search start
+9th max point picked
+incremented number of points picked from the node in hand
+10th max point search start
+10th max point picked
+incremented number of points picked from the node in hand
+11th max point search start
+11th max point picked
+incremented number of points picked from the node in hand
+12th max point search start
+12th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=45-------------picked_treeId=13----pickBorderPoint started, numPoints=8
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=46-------------picked_treeId=77----pickBorderPoint started, numPoints=7
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=47-------------picked_treeId=22----pickBorderPoint started, numPoints=7
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=48-------------picked_treeId=80----pickBorderPoint started, numPoints=13
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+6th max point search start
+6th max point picked
+incremented number of points picked from the node in hand
+7th max point search start
+7th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=49-------------picked_treeId=88----pickBorderPoint started, numPoints=15
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+6th max point search start
+6th max point picked
+incremented number of points picked from the node in hand
+7th max point search start
+7th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=50-------------picked_treeId=19----pickBorderPoint started, numPoints=164
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=51-------------picked_treeId=48----pickBorderPoint started, numPoints=9
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=52-------------picked_treeId=33----pickBorderPoint started, numPoints=41
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+6th max point search start
+6th max point picked
+incremented number of points picked from the node in hand
+7th max point search start
+7th max point picked
+incremented number of points picked from the node in hand
+8th max point search start
+8th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=53-------------picked_treeId=97----pickBorderPoint started, numPoints=1
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=3
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=23
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+6th max point search start
+6th max point picked
+incremented number of points picked from the node in hand
+7th max point search start
+7th max point picked
+incremented number of points picked from the node in hand
+8th max point search start
+8th max point picked
+incremented number of points picked from the node in hand
+9th max point search start
+9th max point picked
+incremented number of points picked from the node in hand
+10th max point search start
+10th max point picked
+incremented number of points picked from the node in hand
+11th max point search start
+11th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
+
+sample number=54-------------picked_treeId=94----pickBorderPoint started, numPoints=4
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=4
+no new point added to the smaple from the node in hand
+pickBorderPoint started, numPoints=17
+0th max point search start
+0th max point picked
+incremented number of points picked from the node in hand
+1th max point search start
+1th max point picked
+incremented number of points picked from the node in hand
+2th max point search start
+2th max point picked
+incremented number of points picked from the node in hand
+3th max point search start
+3th max point picked
+incremented number of points picked from the node in hand
+4th max point search start
+4th max point picked
+incremented number of points picked from the node in hand
+5th max point search start
+5th max point picked
+incremented number of points picked from the node in hand
+6th max point search start
+6th max point picked
+incremented number of points picked from the node in hand
+7th max point search start
+7th max point picked
+incremented number of points picked from the node in hand
+8th max point search start
+8th max point picked
+incremented number of points picked from the node in hand
+9th max point search start
+9th max point picked
+incremented number of points picked from the node in hand
+10th max point search start
+10th max point picked
+incremented number of points picked from the node in hand
+11th max point search start
+11th max point picked
+incremented number of points picked from the node in hand
+12th max point search start
+12th max point picked
+incremented number of points picked from the node in hand
+13th max point search start
+13th max point picked
+incremented number of points picked from the node in hand
+a new points added to the smaple
