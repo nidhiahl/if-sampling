@@ -67,10 +67,16 @@ int main(int argc, char* argv[])      //(argv[1] = inputdataFile.csv
 
 	//exit(0);
 
+	/*string tc[] = {"random","max_aggrement"};
+	string lc[] = {"random","hard_discard","soft_discard"};
+	string pc[] = {"random","core_points","border_points"};
+	int ss[] = {1,2,3,4,5};
+	*/
 	string tc[] = {"random"};
-	string lc[] = {"random"};
-	string pc[] = {"random"};	
+	string lc[] = {"soft_discard"};
+	string pc[] = {"core_points"};	
 	int ss[] = {5};
+	
 	for(auto sample_size:ss){
 		for(auto tree_criterion:tc){
 			for(auto leaf_criterion:lc){

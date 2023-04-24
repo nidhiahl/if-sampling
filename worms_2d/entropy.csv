@@ -1,0 +1,180 @@
+1% tree_criterion=random leaf_criterion=random point_criterion=random 
+
+class 16 = 93;  class 31 = 89;  class 26 = 76;  class 2 = 63;  class 18 = 63;  class 22 = 55;  class 15 = 43;  class 4 = 42;  class 5 = 42;  class 9 = 39;  class 32 = 37;  class 35 = 37;  class 25 = 34;  class 1 = 34;  class 17 = 32;  class 14 = 31;  class 3 = 30;  class 6 = 23;  class 21 = 20;  class 13 = 20;  class 28 = 19;  class 11 = 18;  class 34 = 17;  class 19 = 14;  class 24 = 12;  class 20 = 12;  class 30 = 11;  class 8 = 8;  class 7 = 8;  class 12 = 7;  class 23 = 7;  class 10 = 7;  class 27 = 5;  class 33 = 4;  class 29 = 4;  
+Entropy: 0.9189770009613323
+point_criterion=core_points 
+
+class 2 = 84;  class 16 = 81;  class 31 = 57;  class 26 = 56;  class 18 = 55;  class 11 = 50;  class 9 = 47;  class 22 = 44;  class 3 = 41;  class 15 = 40;  class 25 = 40;  class 17 = 36;  class 23 = 35;  class 35 = 35;  class 34 = 33;  class 5 = 31;  class 1 = 27;  class 13 = 26;  class 21 = 23;  class 7 = 23;  class 19 = 21;  class 4 = 18;  class 32 = 18;  class 30 = 18;  class 20 = 18;  class 28 = 17;  class 6 = 13;  class 8 = 13;  class 10 = 12;  class 14 = 10;  class 29 = 9;  class 24 = 9;  class 12 = 8;  class 33 = 8;  
+Entropy: 0.94716097077656
+point_criterion=border_points 
+
+class 31 = 124;  class 18 = 123;  class 26 = 103;  class 16 = 101;  class 2 = 75;  class 32 = 71;  class 4 = 66;  class 15 = 51;  class 5 = 37;  class 9 = 36;  class 35 = 33;  class 1 = 30;  class 22 = 27;  class 3 = 27;  class 25 = 24;  class 14 = 16;  class 34 = 14;  class 20 = 12;  class 17 = 11;  class 21 = 11;  class 11 = 9;  class 13 = 9;  class 24 = 8;  class 28 = 6;  class 19 = 6;  class 29 = 6;  class 6 = 5;  class 8 = 3;  class 7 = 3;  class 23 = 2;  class 33 = 2;  class 30 = 2;  class 10 = 1;  class 27 = 1;  class 12 = 1;  
+Entropy: 0.8283811183436625
+leaf_criterion=hard_discard point_criterion=random 
+
+class 31 = 200;  class 18 = 142;  class 26 = 131;  class 16 = 98;  class 32 = 87;  class 2 = 63;  class 5 = 53;  class 4 = 45;  class 14 = 41;  class 35 = 36;  class 22 = 29;  class 15 = 27;  class 3 = 20;  class 9 = 16;  class 1 = 15;  class 17 = 11;  class 25 = 7;  class 11 = 5;  class 34 = 5;  class 19 = 4;  class 21 = 4;  class 13 = 4;  class 24 = 3;  class 8 = 3;  class 30 = 2;  class 20 = 2;  class 7 = 1;  class 23 = 1;  class 28 = 1;  
+Entropy: 0.7802862853180236
+point_criterion=core_points 
+
+class 31 = 141;  class 26 = 125;  class 2 = 117;  class 18 = 105;  class 16 = 93;  class 35 = 48;  class 5 = 47;  class 17 = 44;  class 4 = 40;  class 22 = 39;  class 32 = 36;  class 15 = 31;  class 14 = 27;  class 3 = 20;  class 13 = 19;  class 9 = 18;  class 1 = 18;  class 21 = 14;  class 11 = 12;  class 25 = 11;  class 8 = 10;  class 24 = 9;  class 30 = 8;  class 28 = 7;  class 34 = 4;  class 7 = 4;  class 20 = 3;  class 19 = 2;  class 10 = 2;  class 29 = 1;  class 6 = 1;  
+Entropy: 0.8361190197880326
+point_criterion=border_points 
+
+class 31 = 210;  class 18 = 162;  class 26 = 134;  class 16 = 115;  class 32 = 93;  class 4 = 86;  class 2 = 58;  class 35 = 39;  class 15 = 33;  class 3 = 27;  class 22 = 24;  class 5 = 22;  class 9 = 21;  class 1 = 13;  class 11 = 7;  class 14 = 4;  class 25 = 4;  class 34 = 2;  class 17 = 1;  class 30 = 1;  
+Entropy: 0.8054551829966978
+leaf_criterion=soft_discard point_criterion=random 
+
+class 31 = 216;  class 26 = 128;  class 18 = 114;  class 16 = 95;  class 32 = 90;  class 4 = 67;  class 2 = 56;  class 15 = 39;  class 35 = 38;  class 5 = 36;  class 14 = 36;  class 22 = 32;  class 1 = 17;  class 3 = 15;  class 17 = 15;  class 25 = 9;  class 11 = 9;  class 21 = 9;  class 9 = 9;  class 34 = 8;  class 13 = 7;  class 24 = 4;  class 30 = 2;  class 19 = 2;  class 29 = 2;  class 8 = 1;  
+Entropy: 0.8100030410936467
+point_criterion=core_points 
+
+class 26 = 135;  class 31 = 126;  class 18 = 112;  class 16 = 101;  class 2 = 96;  class 32 = 49;  class 5 = 49;  class 4 = 48;  class 35 = 48;  class 15 = 34;  class 17 = 31;  class 22 = 31;  class 14 = 27;  class 13 = 22;  class 9 = 22;  class 3 = 19;  class 1 = 16;  class 11 = 14;  class 21 = 14;  class 25 = 13;  class 30 = 9;  class 8 = 8;  class 24 = 8;  class 34 = 7;  class 7 = 5;  class 28 = 5;  class 19 = 3;  class 10 = 2;  class 6 = 1;  class 20 = 1;  
+Entropy: 0.8469473630830364
+point_criterion=border_points 
+
+class 31 = 211;  class 18 = 173;  class 26 = 125;  class 16 = 109;  class 32 = 94;  class 4 = 85;  class 2 = 60;  class 35 = 40;  class 15 = 31;  class 3 = 26;  class 5 = 25;  class 22 = 24;  class 9 = 20;  class 1 = 14;  class 11 = 8;  class 14 = 3;  class 25 = 3;  class 34 = 2;  class 17 = 1;  class 30 = 1;  class 21 = 1;  
+Entropy: 0.7928969948343452
+2% tree_criterion=random leaf_criterion=random point_criterion=random 
+
+class 16 = 185;  class 31 = 169;  class 2 = 155;  class 18 = 146;  class 26 = 144;  class 15 = 100;  class 5 = 92;  class 22 = 88;  class 32 = 79;  class 4 = 75;  class 17 = 72;  class 9 = 70;  class 35 = 60;  class 25 = 58;  class 3 = 54;  class 14 = 54;  class 21 = 50;  class 34 = 47;  class 13 = 47;  class 6 = 44;  class 1 = 40;  class 11 = 33;  class 28 = 32;  class 30 = 28;  class 20 = 28;  class 19 = 28;  class 24 = 25;  class 23 = 19;  class 12 = 19;  class 7 = 18;  class 10 = 14;  class 29 = 11;  class 27 = 10;  class 8 = 10;  class 33 = 8;  
+Entropy: 0.919641706598808
+point_criterion=core_points 
+
+class 16 = 165;  class 2 = 150;  class 26 = 139;  class 18 = 100;  class 31 = 96;  class 15 = 93;  class 22 = 91;  class 9 = 90;  class 3 = 84;  class 34 = 77;  class 25 = 76;  class 17 = 71;  class 23 = 70;  class 35 = 66;  class 11 = 66;  class 4 = 61;  class 5 = 61;  class 1 = 58;  class 13 = 51;  class 32 = 50;  class 7 = 46;  class 28 = 44;  class 20 = 36;  class 21 = 34;  class 6 = 32;  class 19 = 30;  class 30 = 30;  class 12 = 29;  class 14 = 26;  class 10 = 22;  class 33 = 19;  class 8 = 17;  class 24 = 16;  class 29 = 14;  class 27 = 2;  
+Entropy: 0.9437896665130194
+point_criterion=border_points 
+
+class 31 = 282;  class 18 = 244;  class 26 = 183;  class 16 = 177;  class 2 = 138;  class 32 = 135;  class 4 = 122;  class 15 = 107;  class 5 = 88;  class 9 = 69;  class 35 = 68;  class 22 = 59;  class 3 = 57;  class 1 = 53;  class 17 = 48;  class 25 = 37;  class 11 = 26;  class 34 = 25;  class 14 = 24;  class 13 = 20;  class 20 = 20;  class 24 = 19;  class 28 = 18;  class 21 = 17;  class 6 = 16;  class 8 = 12;  class 29 = 9;  class 30 = 9;  class 7 = 9;  class 23 = 7;  class 19 = 7;  class 10 = 3;  class 27 = 3;  class 12 = 1;  
+Entropy: 0.8431311850128421
+leaf_criterion=hard_discard point_criterion=random 
+
+class 31 = 380;  class 26 = 251;  class 18 = 244;  class 16 = 207;  class 32 = 177;  class 2 = 126;  class 4 = 103;  class 5 = 90;  class 35 = 87;  class 15 = 79;  class 14 = 75;  class 22 = 54;  class 3 = 43;  class 9 = 42;  class 1 = 36;  class 17 = 30;  class 11 = 15;  class 13 = 12;  class 34 = 11;  class 24 = 11;  class 25 = 10;  class 21 = 8;  class 30 = 5;  class 8 = 4;  class 7 = 2;  class 19 = 2;  class 20 = 2;  class 10 = 1;  class 28 = 1;  class 12 = 1;  class 6 = 1;  class 23 = 1;  class 29 = 1;  
+Entropy: 0.7674920289783547
+point_criterion=core_points 
+
+class 26 = 277;  class 31 = 273;  class 18 = 221;  class 2 = 207;  class 16 = 204;  class 32 = 105;  class 35 = 98;  class 5 = 84;  class 15 = 77;  class 22 = 73;  class 17 = 73;  class 4 = 71;  class 14 = 47;  class 3 = 43;  class 9 = 43;  class 13 = 36;  class 1 = 31;  class 21 = 29;  class 25 = 23;  class 24 = 18;  class 11 = 17;  class 34 = 12;  class 30 = 11;  class 8 = 10;  class 28 = 9;  class 19 = 8;  class 20 = 5;  class 10 = 2;  class 7 = 2;  class 6 = 1;  class 29 = 1;  class 23 = 1;  
+Entropy: 0.8179616283796833
+point_criterion=border_points 
+
+class 31 = 426;  class 18 = 290;  class 26 = 241;  class 16 = 231;  class 32 = 164;  class 4 = 150;  class 2 = 98;  class 35 = 98;  class 5 = 74;  class 15 = 70;  class 22 = 63;  class 3 = 53;  class 9 = 43;  class 1 = 28;  class 14 = 18;  class 11 = 17;  class 17 = 11;  class 25 = 10;  class 34 = 9;  class 24 = 6;  class 21 = 4;  class 30 = 3;  class 20 = 2;  class 10 = 1;  class 7 = 1;  class 8 = 1;  
+Entropy: 0.7769612787052056
+leaf_criterion=soft_discard point_criterion=random 
+
+class 31 = 398;  class 18 = 267;  class 26 = 258;  class 16 = 189;  class 32 = 166;  class 2 = 130;  class 4 = 129;  class 5 = 85;  class 35 = 75;  class 14 = 74;  class 15 = 63;  class 9 = 50;  class 22 = 47;  class 3 = 42;  class 1 = 38;  class 17 = 16;  class 24 = 14;  class 25 = 13;  class 11 = 11;  class 13 = 8;  class 34 = 8;  class 21 = 8;  class 20 = 7;  class 8 = 5;  class 30 = 4;  class 6 = 2;  class 7 = 2;  class 23 = 1;  class 10 = 1;  class 19 = 1;  
+Entropy: 0.7779814556116837
+point_criterion=core_points 
+
+class 31 = 285;  class 26 = 247;  class 2 = 216;  class 18 = 207;  class 16 = 183;  class 35 = 100;  class 5 = 99;  class 32 = 99;  class 15 = 95;  class 4 = 75;  class 17 = 72;  class 22 = 63;  class 14 = 50;  class 13 = 45;  class 3 = 43;  class 9 = 36;  class 1 = 34;  class 25 = 26;  class 21 = 22;  class 30 = 19;  class 34 = 18;  class 11 = 16;  class 24 = 15;  class 8 = 12;  class 28 = 10;  class 20 = 7;  class 19 = 6;  class 10 = 5;  class 7 = 4;  class 29 = 1;  class 6 = 1;  class 23 = 1;  
+Entropy: 0.8290589849710069
+point_criterion=border_points 
+
+class 31 = 445;  class 18 = 276;  class 26 = 260;  class 16 = 241;  class 32 = 158;  class 4 = 151;  class 2 = 98;  class 35 = 88;  class 5 = 72;  class 15 = 63;  class 22 = 62;  class 3 = 46;  class 9 = 45;  class 1 = 26;  class 14 = 19;  class 11 = 18;  class 17 = 11;  class 25 = 10;  class 34 = 7;  class 24 = 5;  class 21 = 4;  class 20 = 2;  class 30 = 2;  class 7 = 1;  class 10 = 1;  class 13 = 1;  
+Entropy: 0.7688536368652964
+3% tree_criterion=random leaf_criterion=random point_criterion=random 
+
+class 31 = 278;  class 16 = 254;  class 26 = 217;  class 18 = 201;  class 2 = 198;  class 32 = 152;  class 15 = 144;  class 4 = 142;  class 5 = 129;  class 9 = 119;  class 22 = 108;  class 25 = 107;  class 17 = 99;  class 14 = 97;  class 35 = 82;  class 3 = 71;  class 28 = 69;  class 21 = 67;  class 34 = 64;  class 1 = 55;  class 11 = 54;  class 6 = 50;  class 13 = 49;  class 30 = 46;  class 19 = 46;  class 20 = 45;  class 7 = 39;  class 29 = 31;  class 23 = 29;  class 24 = 28;  class 10 = 28;  class 12 = 21;  class 8 = 20;  class 27 = 16;  class 33 = 13;  
+Entropy: 0.924908194269531
+point_criterion=core_points 
+
+class 16 = 224;  class 2 = 215;  class 26 = 194;  class 31 = 163;  class 22 = 146;  class 18 = 144;  class 9 = 139;  class 3 = 138;  class 11 = 127;  class 35 = 126;  class 15 = 124;  class 25 = 113;  class 5 = 102;  class 34 = 102;  class 13 = 95;  class 23 = 93;  class 17 = 91;  class 4 = 89;  class 1 = 86;  class 20 = 69;  class 7 = 67;  class 32 = 66;  class 19 = 57;  class 21 = 52;  class 30 = 51;  class 28 = 43;  class 14 = 42;  class 6 = 40;  class 12 = 36;  class 10 = 34;  class 33 = 28;  class 24 = 28;  class 29 = 23;  class 8 = 19;  class 27 = 2;  
+Entropy: 0.9449503493781992
+point_criterion=border_points 
+
+class 31 = 355;  class 18 = 326;  class 16 = 317;  class 26 = 275;  class 32 = 232;  class 2 = 206;  class 4 = 203;  class 15 = 155;  class 5 = 137;  class 35 = 124;  class 9 = 98;  class 22 = 95;  class 1 = 81;  class 3 = 78;  class 17 = 65;  class 14 = 58;  class 25 = 44;  class 34 = 41;  class 11 = 37;  class 20 = 32;  class 21 = 31;  class 13 = 30;  class 24 = 27;  class 30 = 19;  class 28 = 17;  class 19 = 17;  class 6 = 16;  class 29 = 14;  class 8 = 12;  class 7 = 10;  class 10 = 6;  class 27 = 6;  class 23 = 2;  class 12 = 1;  class 33 = 1;  
+Entropy: 0.8387925704174495
+leaf_criterion=hard_discard point_criterion=random 
+
+class 31 = 585;  class 18 = 368;  class 26 = 364;  class 16 = 299;  class 32 = 248;  class 2 = 208;  class 4 = 156;  class 5 = 140;  class 14 = 135;  class 35 = 133;  class 15 = 108;  class 22 = 76;  class 3 = 65;  class 9 = 53;  class 17 = 44;  class 1 = 38;  class 21 = 22;  class 24 = 22;  class 25 = 19;  class 34 = 19;  class 13 = 18;  class 11 = 12;  class 8 = 8;  class 19 = 6;  class 6 = 5;  class 20 = 5;  class 30 = 4;  class 10 = 4;  class 29 = 2;  class 28 = 2;  
+Entropy: 0.7894269388793542
+point_criterion=core_points 
+
+class 31 = 436;  class 26 = 399;  class 2 = 316;  class 18 = 311;  class 16 = 279;  class 32 = 164;  class 35 = 158;  class 5 = 135;  class 4 = 114;  class 15 = 111;  class 17 = 104;  class 22 = 98;  class 14 = 71;  class 3 = 66;  class 9 = 57;  class 21 = 53;  class 13 = 50;  class 1 = 48;  class 25 = 31;  class 24 = 28;  class 11 = 24;  class 30 = 20;  class 34 = 19;  class 8 = 17;  class 19 = 14;  class 20 = 14;  class 28 = 13;  class 10 = 7;  class 7 = 6;  class 23 = 2;  class 12 = 1;  class 6 = 1;  class 29 = 1;  
+Entropy: 0.8174032051737784
+point_criterion=border_points 
+
+class 31 = 644;  class 26 = 412;  class 18 = 369;  class 16 = 344;  class 32 = 220;  class 4 = 193;  class 2 = 157;  class 35 = 148;  class 5 = 125;  class 15 = 112;  class 22 = 103;  class 3 = 70;  class 9 = 68;  class 1 = 52;  class 14 = 41;  class 17 = 22;  class 11 = 20;  class 34 = 13;  class 24 = 12;  class 25 = 12;  class 21 = 8;  class 13 = 6;  class 30 = 6;  class 20 = 3;  class 7 = 2;  class 10 = 2;  class 29 = 2;  class 8 = 2;  
+Entropy: 0.7716290771477055
+leaf_criterion=soft_discard point_criterion=random 
+
+class 31 = 590;  class 18 = 382;  class 26 = 379;  class 16 = 335;  class 32 = 255;  class 2 = 188;  class 4 = 158;  class 5 = 137;  class 14 = 114;  class 35 = 113;  class 15 = 97;  class 3 = 75;  class 22 = 74;  class 9 = 53;  class 1 = 53;  class 17 = 34;  class 24 = 22;  class 21 = 18;  class 25 = 17;  class 13 = 15;  class 34 = 12;  class 30 = 11;  class 11 = 9;  class 28 = 8;  class 20 = 5;  class 8 = 4;  class 19 = 4;  class 10 = 3;  class 23 = 1;  class 29 = 1;  class 7 = 1;  
+Entropy: 0.7727938263886418
+point_criterion=core_points 
+
+class 31 = 421;  class 26 = 407;  class 18 = 314;  class 2 = 311;  class 16 = 272;  class 35 = 153;  class 32 = 143;  class 5 = 135;  class 4 = 131;  class 15 = 109;  class 22 = 108;  class 17 = 102;  class 14 = 84;  class 3 = 70;  class 9 = 59;  class 13 = 58;  class 21 = 48;  class 1 = 44;  class 25 = 35;  class 24 = 28;  class 30 = 21;  class 11 = 20;  class 34 = 19;  class 19 = 17;  class 20 = 16;  class 8 = 14;  class 28 = 12;  class 10 = 7;  class 7 = 5;  class 23 = 2;  class 29 = 2;  class 6 = 1;  
+Entropy: 0.8273509972309647
+point_criterion=border_points 
+
+class 31 = 655;  class 26 = 410;  class 18 = 371;  class 16 = 339;  class 32 = 215;  class 4 = 190;  class 2 = 170;  class 35 = 147;  class 5 = 125;  class 15 = 105;  class 22 = 100;  class 3 = 70;  class 9 = 67;  class 1 = 52;  class 14 = 35;  class 17 = 27;  class 11 = 20;  class 25 = 14;  class 34 = 13;  class 24 = 12;  class 21 = 9;  class 30 = 6;  class 13 = 5;  class 20 = 3;  class 10 = 2;  class 29 = 2;  class 7 = 2;  class 8 = 2;  
+Entropy: 0.7707482641274536
+4% tree_criterion=random leaf_criterion=random point_criterion=random 
+
+class 16 = 373;  class 31 = 371;  class 26 = 305;  class 18 = 288;  class 2 = 254;  class 15 = 195;  class 5 = 189;  class 32 = 182;  class 22 = 181;  class 4 = 145;  class 35 = 139;  class 17 = 135;  class 25 = 126;  class 9 = 115;  class 3 = 109;  class 14 = 106;  class 1 = 101;  class 21 = 90;  class 11 = 87;  class 13 = 85;  class 19 = 75;  class 34 = 73;  class 28 = 71;  class 6 = 61;  class 20 = 54;  class 24 = 49;  class 23 = 46;  class 30 = 44;  class 7 = 39;  class 10 = 34;  class 29 = 33;  class 8 = 20;  class 12 = 18;  class 27 = 16;  class 33 = 15;  
+Entropy: 0.9182118471052186
+point_criterion=core_points 
+
+class 16 = 359;  class 26 = 273;  class 2 = 266;  class 22 = 219;  class 31 = 216;  class 9 = 188;  class 3 = 186;  class 15 = 185;  class 18 = 184;  class 35 = 161;  class 25 = 145;  class 11 = 134;  class 23 = 130;  class 34 = 127;  class 4 = 126;  class 17 = 123;  class 5 = 114;  class 1 = 109;  class 7 = 99;  class 13 = 98;  class 20 = 90;  class 21 = 79;  class 32 = 74;  class 6 = 73;  class 19 = 70;  class 28 = 69;  class 12 = 52;  class 30 = 48;  class 14 = 46;  class 29 = 42;  class 10 = 41;  class 33 = 38;  class 24 = 35;  class 8 = 24;  class 27 = 1;  
+Entropy: 0.9405287820876119
+point_criterion=border_points 
+
+class 31 = 502;  class 18 = 424;  class 16 = 418;  class 26 = 379;  class 2 = 286;  class 32 = 276;  class 4 = 268;  class 15 = 226;  class 5 = 184;  class 35 = 157;  class 22 = 132;  class 9 = 124;  class 17 = 114;  class 3 = 102;  class 1 = 87;  class 14 = 86;  class 25 = 74;  class 13 = 50;  class 11 = 43;  class 34 = 43;  class 21 = 34;  class 20 = 32;  class 24 = 31;  class 19 = 23;  class 6 = 22;  class 28 = 22;  class 30 = 20;  class 8 = 15;  class 29 = 12;  class 10 = 9;  class 23 = 8;  class 7 = 8;  class 27 = 6;  class 12 = 5;  class 33 = 2;  
+Entropy: 0.8354452742286008
+leaf_criterion=hard_discard point_criterion=random 
+
+class 31 = 757;  class 18 = 500;  class 26 = 485;  class 16 = 395;  class 32 = 323;  class 2 = 256;  class 4 = 220;  class 5 = 201;  class 35 = 166;  class 14 = 165;  class 15 = 150;  class 22 = 116;  class 3 = 92;  class 1 = 76;  class 9 = 64;  class 17 = 52;  class 21 = 31;  class 24 = 28;  class 13 = 27;  class 11 = 25;  class 34 = 25;  class 25 = 20;  class 30 = 11;  class 8 = 9;  class 10 = 6;  class 20 = 6;  class 19 = 5;  class 28 = 4;  class 7 = 3;  class 29 = 3;  class 6 = 1;  class 23 = 1;  class 12 = 1;  
+Entropy: 0.7739673432026521
+point_criterion=core_points 
+
+class 31 = 566;  class 26 = 558;  class 18 = 423;  class 16 = 381;  class 2 = 379;  class 32 = 204;  class 35 = 201;  class 5 = 195;  class 4 = 179;  class 15 = 152;  class 22 = 134;  class 17 = 128;  class 14 = 116;  class 3 = 83;  class 13 = 79;  class 9 = 76;  class 21 = 63;  class 1 = 62;  class 25 = 42;  class 24 = 33;  class 34 = 31;  class 30 = 27;  class 11 = 26;  class 19 = 21;  class 8 = 16;  class 20 = 15;  class 28 = 14;  class 10 = 9;  class 7 = 7;  class 23 = 2;  class 6 = 1;  class 29 = 1;  
+Entropy: 0.8227057712530579
+point_criterion=border_points 
+
+class 31 = 837;  class 26 = 582;  class 18 = 457;  class 16 = 431;  class 32 = 286;  class 4 = 241;  class 2 = 209;  class 35 = 184;  class 5 = 167;  class 15 = 165;  class 22 = 136;  class 3 = 101;  class 9 = 86;  class 14 = 74;  class 1 = 68;  class 17 = 45;  class 11 = 28;  class 25 = 24;  class 21 = 22;  class 24 = 21;  class 34 = 20;  class 13 = 13;  class 30 = 8;  class 20 = 6;  class 8 = 4;  class 28 = 2;  class 10 = 2;  class 7 = 2;  class 29 = 2;  class 19 = 1;  
+Entropy: 0.7707132161354793
+leaf_criterion=soft_discard point_criterion=random 
+
+class 31 = 760;  class 26 = 523;  class 18 = 473;  class 16 = 391;  class 32 = 330;  class 2 = 259;  class 4 = 220;  class 5 = 196;  class 14 = 168;  class 35 = 159;  class 15 = 153;  class 22 = 114;  class 3 = 100;  class 9 = 84;  class 1 = 62;  class 17 = 52;  class 21 = 29;  class 25 = 28;  class 11 = 27;  class 13 = 19;  class 24 = 17;  class 34 = 16;  class 30 = 9;  class 8 = 9;  class 20 = 9;  class 19 = 5;  class 7 = 3;  class 10 = 3;  class 29 = 2;  class 28 = 2;  class 6 = 1;  class 23 = 1;  
+Entropy: 0.775484824491461
+point_criterion=core_points 
+
+class 31 = 556;  class 26 = 548;  class 18 = 429;  class 2 = 392;  class 16 = 389;  class 35 = 204;  class 32 = 204;  class 5 = 202;  class 15 = 164;  class 4 = 156;  class 22 = 136;  class 17 = 127;  class 14 = 98;  class 3 = 83;  class 9 = 80;  class 13 = 73;  class 21 = 66;  class 1 = 65;  class 25 = 42;  class 24 = 37;  class 34 = 29;  class 11 = 27;  class 30 = 27;  class 20 = 20;  class 19 = 17;  class 28 = 16;  class 8 = 15;  class 10 = 11;  class 7 = 7;  class 23 = 2;  class 29 = 1;  class 6 = 1;  
+Entropy: 0.823482868562087
+point_criterion=border_points 
+
+class 31 = 851;  class 26 = 553;  class 18 = 449;  class 16 = 428;  class 32 = 268;  class 4 = 247;  class 2 = 217;  class 35 = 191;  class 5 = 167;  class 15 = 158;  class 22 = 140;  class 3 = 99;  class 14 = 89;  class 9 = 87;  class 1 = 69;  class 17 = 51;  class 11 = 27;  class 25 = 25;  class 21 = 23;  class 24 = 22;  class 34 = 21;  class 13 = 15;  class 30 = 8;  class 20 = 7;  class 7 = 2;  class 28 = 2;  class 8 = 2;  class 10 = 2;  class 29 = 2;  class 23 = 1;  class 19 = 1;  
+Entropy: 0.7674569200696318
+5% tree_criterion=random leaf_criterion=random point_criterion=random 
+
+class 31 = 490;  class 16 = 424;  class 26 = 382;  class 18 = 355;  class 2 = 311;  class 15 = 227;  class 5 = 214;  class 32 = 212;  class 17 = 202;  class 22 = 199;  class 4 = 195;  class 9 = 178;  class 35 = 163;  class 3 = 161;  class 25 = 138;  class 13 = 127;  class 1 = 124;  class 21 = 123;  class 34 = 111;  class 14 = 111;  class 6 = 99;  class 20 = 87;  class 28 = 86;  class 11 = 82;  class 24 = 76;  class 30 = 66;  class 7 = 56;  class 19 = 54;  class 23 = 45;  class 29 = 41;  class 10 = 34;  class 8 = 33;  class 12 = 29;  class 33 = 24;  class 27 = 21;  
+Entropy: 0.9224235907041852
+point_criterion=core_points 
+
+class 16 = 423;  class 2 = 369;  class 26 = 313;  class 31 = 292;  class 22 = 255;  class 18 = 232;  class 9 = 231;  class 15 = 227;  class 3 = 214;  class 35 = 202;  class 25 = 194;  class 11 = 177;  class 23 = 170;  class 17 = 159;  class 34 = 156;  class 13 = 136;  class 4 = 134;  class 1 = 131;  class 5 = 130;  class 20 = 118;  class 21 = 111;  class 7 = 110;  class 32 = 102;  class 19 = 87;  class 28 = 79;  class 14 = 73;  class 6 = 72;  class 30 = 71;  class 12 = 61;  class 10 = 57;  class 33 = 56;  class 29 = 49;  class 24 = 45;  class 8 = 40;  class 27 = 4;  
+Entropy: 0.9440916063883483
+point_criterion=border_points 
+
+class 31 = 638;  class 16 = 514;  class 18 = 483;  class 26 = 456;  class 2 = 345;  class 32 = 332;  class 15 = 309;  class 4 = 304;  class 5 = 258;  class 35 = 198;  class 17 = 153;  class 9 = 151;  class 22 = 148;  class 3 = 122;  class 14 = 116;  class 1 = 112;  class 25 = 91;  class 13 = 70;  class 34 = 70;  class 11 = 53;  class 24 = 48;  class 20 = 44;  class 21 = 44;  class 6 = 36;  class 30 = 31;  class 28 = 31;  class 19 = 26;  class 29 = 20;  class 7 = 19;  class 10 = 16;  class 8 = 16;  class 23 = 12;  class 27 = 8;  class 12 = 4;  class 33 = 2;  
+Entropy: 0.8452987610833992
+leaf_criterion=hard_discard point_criterion=random 
+
+class 31 = 911;  class 26 = 657;  class 18 = 580;  class 16 = 476;  class 32 = 427;  class 2 = 312;  class 4 = 265;  class 5 = 231;  class 14 = 223;  class 35 = 221;  class 15 = 208;  class 22 = 144;  class 3 = 114;  class 9 = 88;  class 1 = 79;  class 17 = 71;  class 24 = 42;  class 21 = 38;  class 13 = 31;  class 25 = 30;  class 34 = 27;  class 11 = 23;  class 20 = 19;  class 30 = 16;  class 8 = 15;  class 19 = 7;  class 28 = 7;  class 10 = 4;  class 7 = 4;  class 27 = 3;  class 29 = 3;  class 6 = 2;  class 23 = 1;  class 12 = 1;  
+Entropy: 0.7728786870705046
+point_criterion=core_points 
+
+class 31 = 749;  class 26 = 680;  class 18 = 549;  class 2 = 459;  class 16 = 450;  class 32 = 272;  class 35 = 252;  class 5 = 248;  class 4 = 194;  class 22 = 180;  class 15 = 177;  class 17 = 154;  class 14 = 144;  class 9 = 100;  class 3 = 99;  class 13 = 97;  class 1 = 83;  class 21 = 76;  class 25 = 54;  class 24 = 45;  class 34 = 36;  class 11 = 34;  class 30 = 32;  class 19 = 25;  class 20 = 23;  class 8 = 23;  class 28 = 18;  class 10 = 13;  class 7 = 7;  class 12 = 2;  class 23 = 2;  class 33 = 1;  class 6 = 1;  class 29 = 1;  
+Entropy: 0.8089867333613396
+point_criterion=border_points 
+
+class 31 = 1053;  class 26 = 746;  class 18 = 538;  class 16 = 488;  class 32 = 328;  class 4 = 277;  class 2 = 276;  class 35 = 231;  class 15 = 215;  class 5 = 213;  class 22 = 162;  class 14 = 130;  class 3 = 116;  class 9 = 110;  class 1 = 83;  class 17 = 80;  class 21 = 39;  class 25 = 35;  class 11 = 33;  class 24 = 31;  class 34 = 29;  class 13 = 24;  class 30 = 12;  class 20 = 9;  class 8 = 6;  class 28 = 4;  class 10 = 4;  class 19 = 3;  class 7 = 2;  class 29 = 2;  class 23 = 1;  
+Entropy: 0.7746496467439032
+leaf_criterion=soft_discard point_criterion=random 
+
+class 31 = 886;  class 26 = 645;  class 18 = 598;  class 16 = 479;  class 32 = 414;  class 2 = 318;  class 4 = 268;  class 5 = 241;  class 14 = 216;  class 15 = 203;  class 35 = 201;  class 22 = 156;  class 3 = 105;  class 9 = 104;  class 1 = 84;  class 17 = 73;  class 21 = 43;  class 25 = 40;  class 24 = 35;  class 34 = 34;  class 11 = 32;  class 13 = 31;  class 8 = 16;  class 30 = 15;  class 20 = 11;  class 28 = 11;  class 7 = 7;  class 10 = 6;  class 19 = 3;  class 29 = 2;  class 6 = 2;  class 23 = 1;  
+Entropy: 0.7900009894250573
+point_criterion=core_points 
+
+class 31 = 779;  class 26 = 695;  class 18 = 498;  class 2 = 485;  class 16 = 479;  class 5 = 269;  class 32 = 241;  class 35 = 226;  class 4 = 212;  class 15 = 175;  class 22 = 167;  class 17 = 151;  class 14 = 138;  class 9 = 104;  class 13 = 98;  class 3 = 96;  class 1 = 91;  class 21 = 75;  class 25 = 49;  class 24 = 45;  class 34 = 36;  class 11 = 30;  class 30 = 26;  class 19 = 26;  class 20 = 24;  class 8 = 20;  class 28 = 19;  class 10 = 13;  class 7 = 6;  class 29 = 3;  class 23 = 2;  class 6 = 1;  class 12 = 1;  
+Entropy: 0.8116148745860987
+point_criterion=border_points 
+
+class 31 = 1038;  class 26 = 752;  class 18 = 523;  class 16 = 499;  class 32 = 331;  class 2 = 282;  class 4 = 278;  class 5 = 226;  class 35 = 225;  class 15 = 212;  class 22 = 160;  class 14 = 124;  class 3 = 119;  class 9 = 109;  class 1 = 90;  class 17 = 83;  class 21 = 35;  class 25 = 35;  class 11 = 32;  class 34 = 28;  class 24 = 28;  class 13 = 27;  class 30 = 12;  class 20 = 10;  class 10 = 5;  class 8 = 5;  class 28 = 4;  class 19 = 3;  class 7 = 2;  class 29 = 2;  class 23 = 1;  
+Entropy: 0.7755928190458753

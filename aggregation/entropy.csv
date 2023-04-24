@@ -1,0 +1,180 @@
+1% tree_criterion=random leaf_criterion=random point_criterion=random 
+
+class 2 = 3;  class 3 = 1;  class 5 = 1;  class 7 = 1;  class 6 = 1;  
+Entropy: 0.9165164431996023
+point_criterion=core_points 
+
+class 6 = 2;  class 3 = 2;  class 2 = 2;  class 4 = 1;  
+Entropy: 0.9751060324573735
+point_criterion=border_points 
+
+class 3 = 4;  class 5 = 1;  class 4 = 1;  class 6 = 1;  
+Entropy: 0.8322488896002306
+leaf_criterion=hard_discard point_criterion=random 
+
+class 5 = 4;  class 4 = 2;  class 7 = 1;  
+Entropy: 0.8699155297736259
+point_criterion=core_points 
+
+class 5 = 6;  class 7 = 1;  
+Entropy: 0.5916727785823274
+point_criterion=border_points 
+
+class 5 = 7;  
+Entropy: nan
+leaf_criterion=soft_discard point_criterion=random 
+
+class 5 = 6;  class 4 = 1;  
+Entropy: 0.5916727785823274
+point_criterion=core_points 
+
+class 5 = 5;  class 4 = 1;  class 2 = 1;  
+Entropy: 0.72483409150576
+point_criterion=border_points 
+
+class 5 = 7;  
+Entropy: nan
+2% tree_criterion=random leaf_criterion=random point_criterion=random 
+
+class 4 = 6;  class 2 = 4;  class 1 = 2;  class 5 = 1;  class 6 = 1;  class 3 = 1;  
+Entropy: 0.8534897229796912
+point_criterion=core_points 
+
+class 4 = 5;  class 2 = 4;  class 6 = 3;  class 5 = 2;  class 1 = 1;  
+Entropy: 0.925633916873193
+point_criterion=border_points 
+
+class 6 = 5;  class 4 = 3;  class 2 = 2;  class 5 = 2;  class 3 = 1;  class 7 = 1;  class 1 = 1;  
+Entropy: 0.9080630942453353
+leaf_criterion=hard_discard point_criterion=random 
+
+class 5 = 10;  class 4 = 4;  class 2 = 1;  
+Entropy: 0.7312088026202268
+point_criterion=core_points 
+
+class 5 = 10;  class 7 = 2;  class 4 = 2;  class 2 = 1;  
+Entropy: 0.7128025995084718
+point_criterion=border_points 
+
+class 5 = 14;  class 2 = 1;  
+Entropy: 0.3533593350214213
+leaf_criterion=soft_discard point_criterion=random 
+
+class 5 = 13;  class 4 = 2;  
+Entropy: 0.5665095065529053
+point_criterion=core_points 
+
+class 5 = 10;  class 4 = 4;  class 7 = 1;  
+Entropy: 0.7312088026202268
+point_criterion=border_points 
+
+class 5 = 14;  class 2 = 1;  
+Entropy: 0.3533593350214213
+3% tree_criterion=random leaf_criterion=random point_criterion=random 
+
+class 6 = 7;  class 4 = 5;  class 3 = 4;  class 5 = 3;  class 2 = 3;  class 1 = 1;  
+Entropy: 0.9296413565956573
+point_criterion=core_points 
+
+class 2 = 9;  class 6 = 6;  class 3 = 2;  class 1 = 2;  class 7 = 2;  class 4 = 2;  
+Entropy: 0.8746712532411346
+point_criterion=border_points 
+
+class 4 = 8;  class 6 = 5;  class 3 = 4;  class 2 = 4;  class 1 = 1;  class 5 = 1;  
+Entropy: 0.8818946284477991
+leaf_criterion=hard_discard point_criterion=random 
+
+class 5 = 13;  class 2 = 4;  class 7 = 4;  class 4 = 2;  
+Entropy: 0.8247001881190673
+point_criterion=core_points 
+
+class 5 = 16;  class 4 = 4;  class 2 = 2;  class 7 = 1;  
+Entropy: 0.6530853258545933
+point_criterion=border_points 
+
+class 5 = 16;  class 4 = 4;  class 7 = 3;  
+Entropy: 0.7485306016287521
+leaf_criterion=soft_discard point_criterion=random 
+
+class 5 = 16;  class 4 = 4;  class 2 = 2;  class 7 = 1;  
+Entropy: 0.6530853258545933
+point_criterion=core_points 
+
+class 5 = 13;  class 4 = 4;  class 7 = 4;  class 2 = 2;  
+Entropy: 0.8247001881190673
+point_criterion=border_points 
+
+class 5 = 18;  class 4 = 3;  class 7 = 2;  
+Entropy: 0.6097630879642211
+4% tree_criterion=random leaf_criterion=random point_criterion=random 
+
+class 6 = 9;  class 3 = 8;  class 2 = 5;  class 4 = 4;  class 5 = 3;  class 1 = 1;  class 7 = 1;  
+Entropy: 0.8811673295452553
+point_criterion=core_points 
+
+class 2 = 9;  class 4 = 8;  class 3 = 5;  class 6 = 4;  class 7 = 3;  class 1 = 2;  
+Entropy: 0.9320186695361492
+point_criterion=border_points 
+
+class 2 = 8;  class 6 = 6;  class 5 = 5;  class 3 = 5;  class 4 = 4;  class 1 = 2;  class 7 = 1;  
+Entropy: 0.9290231565518661
+leaf_criterion=hard_discard point_criterion=random 
+
+class 5 = 20;  class 4 = 5;  class 7 = 5;  class 2 = 1;  
+Entropy: 0.7084232705705205
+point_criterion=core_points 
+
+class 5 = 20;  class 4 = 9;  class 2 = 1;  class 7 = 1;  
+Entropy: 0.6227773985687916
+point_criterion=border_points 
+
+class 5 = 20;  class 4 = 7;  class 7 = 3;  class 2 = 1;  
+Entropy: 0.6892766414141805
+leaf_criterion=soft_discard point_criterion=random 
+
+class 5 = 25;  class 7 = 4;  class 4 = 2;  
+Entropy: 0.5593636130115008
+point_criterion=core_points 
+
+class 5 = 21;  class 2 = 4;  class 4 = 3;  class 7 = 3;  
+Entropy: 0.7069620119243909
+point_criterion=border_points 
+
+class 5 = 23;  class 4 = 4;  class 7 = 2;  class 2 = 2;  
+Entropy: 0.6054542037529329
+5% tree_criterion=random leaf_criterion=random point_criterion=random 
+
+class 6 = 9;  class 4 = 6;  class 2 = 6;  class 3 = 5;  class 1 = 5;  class 7 = 4;  class 5 = 4;  
+Entropy: 0.9805975644461596
+point_criterion=core_points 
+
+class 3 = 13;  class 2 = 10;  class 4 = 9;  class 6 = 3;  class 5 = 2;  class 7 = 1;  class 1 = 1;  
+Entropy: 0.8176459849694069
+point_criterion=border_points 
+
+class 4 = 9;  class 1 = 8;  class 2 = 8;  class 6 = 7;  class 5 = 3;  class 3 = 3;  class 7 = 1;  
+Entropy: 0.917371441770011
+leaf_criterion=hard_discard point_criterion=random 
+
+class 5 = 24;  class 4 = 6;  class 2 = 5;  class 7 = 4;  
+Entropy: 0.7816945005071305
+point_criterion=core_points 
+
+class 5 = 21;  class 4 = 10;  class 7 = 5;  class 2 = 3;  
+Entropy: 0.8244642529717926
+point_criterion=border_points 
+
+class 5 = 25;  class 4 = 6;  class 7 = 5;  class 2 = 3;  
+Entropy: 0.74564075397862
+leaf_criterion=soft_discard point_criterion=random 
+
+class 5 = 24;  class 2 = 5;  class 4 = 5;  class 7 = 5;  
+Entropy: 0.7854187832693527
+point_criterion=core_points 
+
+class 5 = 21;  class 4 = 8;  class 7 = 6;  class 2 = 4;  
+Entropy: 0.8510544314480358
+point_criterion=border_points 
+
+class 5 = 23;  class 4 = 8;  class 7 = 5;  class 2 = 3;  
+Entropy: 0.7913363278168731
