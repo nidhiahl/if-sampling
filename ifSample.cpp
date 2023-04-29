@@ -73,34 +73,37 @@ int main(int argc, char* argv[])      //(argv[1] = inputdataFile.csv
 	int ss[] = {1,2,3,4,5};
 	*/
 	string tc[] = {"random"};
-	string lc[] = {"soft_discard"};
-	string pc[] = {"core_points"};	
+	string lc[] = {"random","soft_discard","hard_discard"};
+	string pc[] = {"random","core_points","border_points"};	
 	int ss[] = {5};
-	
-	for(auto sample_size:ss){
-		for(auto tree_criterion:tc){
-			for(auto leaf_criterion:lc){
-				for(auto point_criterion:pc){
-					ifSampling *ifSamplingObject = new ifSampling(refiForestObject,aScoreTh,tree_criterion,leaf_criterion,point_criterion,double(sample_size)/100);
-					ifSampling &refifSamplingObject = *ifSamplingObject;
-					refifSamplingObject.sample();
-					clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &end_sampling);
-    				double samplingTime =  (((end_sampling.tv_sec - start_sampling.tv_sec) * 1e9)+(end_sampling.tv_nsec - start_sampling.tv_nsec))*1e-9;
-					
-					ofstream write_sampleSet(dataset+"/sampleSets/"+to_string(sample_size)+"%_"+tree_criterion+"_"+leaf_criterion+"_"+point_criterion+"_sampleSet.csv",ios::out|ios::binary);
-					if(!write_sampleSet){
-						cout<<"Can not open input data file:/"+dataset+"/sampleSets/"<<sample_size<<"%_"<<tree_criterion<<"_"<<leaf_criterion<<"_"<<point_criterion<<"_sampleSet.csv"<<endl;
-						exit(0);
+	int numRuns = 5;
+	for(int run = 1; run<= numRuns; run++){
+		for(auto sample_size:ss){
+			for(auto tree_criterion:tc){
+				for(auto leaf_criterion:lc){
+					for(auto point_criterion:pc){
+						ifSampling *ifSamplingObject = new ifSampling(refiForestObject,aScoreTh,tree_criterion,leaf_criterion,point_criterion,double(sample_size)/100);
+						ifSampling &refifSamplingObject = *ifSamplingObject;
+						refifSamplingObject.sample();
+						clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &end_sampling);
+    					double samplingTime =  (((end_sampling.tv_sec - start_sampling.tv_sec) * 1e9)+(end_sampling.tv_nsec - start_sampling.tv_nsec))*1e-9;
+						
+						ofstream write_sampleSet(dataset+"/sampleSets/"+to_string(run)+"_Run"+to_string(sample_size)+"%_"+tree_criterion+"_"+leaf_criterion+"_"+point_criterion+"_sampleSet.csv",ios::out|ios::binary);
+						if(!write_sampleSet){
+							cout<<"Can not open input data file:/"+dataset+"/sampleSets/"<<sample_size<<"%_"<<tree_criterion<<"_"<<leaf_criterion<<"_"<<point_criterion<<"_sampleSet.csv"<<endl;
+							exit(0);
+						}
+						for(auto i:refifSamplingObject.sampleSet){
+							write_sampleSet<<i<<" "<<refDataObject.dataVector[i]->label<<endl;
+						}
+						write_sampleSet.close();
+						delete ifSamplingObject;
 					}
-					for(auto i:refifSamplingObject.sampleSet){
-						write_sampleSet<<i<<" "<<refDataObject.dataVector[i]->label<<endl;
-					}
-					write_sampleSet.close();
-					delete ifSamplingObject;
 				}
-			}
+			}	
 		}
 	}
+
 	
 	
 	
