@@ -39,20 +39,21 @@ for sample_size in ss:
 			for point_criterion in pc:
 				#print('point_criterion='+point_criterion,end=' ')
 				#print('\n')
-				print(	'\n'+str(sample_size)+'%-'+tree_criterion+'-'+leaf_criterion+'-'+point_criterion,end=' ')		
+				print('\n'+str(sample_size)+'%-'+tree_criterion+'-'+leaf_criterion+'-'+point_criterion,end=' ')		
 					
 				for run in range(1,6):
-					print(str(run),end=' ')
+					print(' '+str(run),end=' ')
 					sample_input_string = dataset+'/sampleSets/'+str(run)+'_Run'+str(sample_size)+'%_'+tree_criterion+'_'+leaf_criterion+'_'+point_criterion+'_sampleSet.csv'
 					sample = pd.read_csv(sample_input_string, sep =' ', header = None)
 					p_sample_data = sample[1].value_counts()
 					entropy = scipy.stats.entropy(p_sample_data, base=len(p_sample_data))
-					for count, value in enumerate(p_sample_data):
-						for dcount, dvalue in enumerate(p_data): 
-							if p_data.index[count] == p_sample_data.index[count]:
+					for dcount, dvalue in enumerate(p_data):
+						for count, value in enumerate(p_sample_data):
+							#print("dfdfd",p_data.index[dcount],p_sample_data.index[count])	
+							if p_data.index[dcount] == p_sample_data.index[count]:
 								print(value,end=' ')
 					#print("\nEntropy:",entropy)
-					print(entropy,end=' ')
+					print(entropy)
 
 
 
